@@ -1,9 +1,9 @@
-import cat from '../public/car6.jpg'
-import car from '../public/car.jpg'
-import car2 from '../public/car3.jpg'
-import girl from '../public/girl2.jpg'
-import man from '../public/man.jpg'
-import snow from '../public/snow.jpg'
+import cat from '../../public/car6.jpg'
+import car from '../../public/car.jpg'
+import car2 from '../../public/car3.jpg'
+import girl from '../../public/girl2.jpg'
+import man from '../../public/man.jpg'
+import snow from '../../public/snow.jpg'
 
 
 export const cardsData =  [
