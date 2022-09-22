@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Hero from './components/Hero'
 import Instegram from './components/Instegram'
 import Slider from './components/Slider'
-import { sliderData } from './api/sliderData'
+
 
 import Categery from './components/Categery'
 
@@ -22,7 +22,7 @@ export default function Home() {
       heading='Capture Photogtaphy'
       message='I capture moment in nature and keep then alive.'
       />
-      <Slider slides={sliderData} />
+      <Slider />
      <Instegram />
      <Categery />
     </div>
