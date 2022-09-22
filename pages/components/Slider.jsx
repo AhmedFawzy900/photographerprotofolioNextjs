@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import {FaArrowCircleLeft , FaArrowCircleRight} from 'react-icons/fa'
-
-const Slider = ({slides}) => {
+import { sliderData } from '../api/sliderData'
+const Slider = () => {
  const [currnet,setCurrent] = useState(0)
- const length = slides.length;
+ const length = sliderData.length;
 
  const nextSlide = () => {
     setCurrent(currnet === length - 1 ? 0 : currnet + 1)
@@ -12,7 +12,7 @@ const Slider = ({slides}) => {
  const prevSlide = () => {
     setCurrent(currnet === 0 ? length - 1 : currnet - 1)
  }
- if(!Array.isArray(slides) || slides.length <= 0){
+ if(!Array.isArray(sliderData) || sliderData.length <= 0){
     return null;
  }
   return (
@@ -20,7 +20,7 @@ const Slider = ({slides}) => {
         <h1 className='text-4xl font-bold text-center p-4'>Gallary</h1>
         
         <div className='relative flex justify-center p-4'>
-            {slides.map((slide,index) => {
+            {sliderData.map((slide,index) => {
                 return (
                     <div key={index} className={
                         index === currnet
