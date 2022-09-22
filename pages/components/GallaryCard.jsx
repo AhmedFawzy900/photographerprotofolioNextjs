@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { cardsData } from '../../api/cardsData'
+import { cardsData } from '../api/cardsData'
 const GallaryCard = () => {
   return (
     <div className='relative flex justify-center items-center flex-wrap  '>
